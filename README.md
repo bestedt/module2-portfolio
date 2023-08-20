@@ -13,6 +13,7 @@ https://www.imagine.art/
 ## Purpose Of Project
 To create myself a working and adaptable portfolio that I can continue to mod and change with the various skills I will learn throughout the bootcamp
 ## Project Screen Shots
-![Screenshot 2023-08-19 181752](https://github.com/bestedt/module2-portfolio/assets/139821441/48f73923-3362-4067-b4e2-20ccc65ea438)
-![Screenshot 2023-08-19 181815](https://github.com/bestedt/module2-portfolio/assets/139821441/b398a211-0b03-43d5-b7c6-fe74b62e83a0)
-![Screenshot 2023-08-19 181827](https://github.com/bestedt/module2-portfolio/assets/139821441/2b56f2fb-9603-419f-b2cf-6d4840293a97)
+
+![Screenshot 2023-08-19 194647](https://github.com/bestedt/module2-portfolio/assets/139821441/f968b7f2-052f-40dc-bd24-998fa9aa6253)
+![Screenshot 2023-08-19 194659](https://github.com/bestedt/module2-portfolio/assets/139821441/400a5e02-bf88-44d6-973d-fbeecfbde396)
+![Screenshot 2023-08-19 194708](https://github.com/bestedt/module2-portfolio/assets/139821441/482f2e56-daef-43db-b3c1-6f01047702ce)

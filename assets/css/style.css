@@ -1,0 +1,260 @@
+:root {
+    --background: #eea047;
+  }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+  }
+  /* Header Specs  */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color:var(--background);
+    color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  h1 {
+    font-size: 300%;
+  }
+  
+/* Nav Specs with hover function */
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    
+  }
+  
+  nav a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #f8d06a;
+    cursor: pointer;
+  }
+main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+/* Backrground photo under header  */
+.background-art {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("/assets/images/vecteezy_lighthouse-on-sea-coast-landscape-with-beacon_21449256.jpg");
+    background-size: cover;
+    background-position: center;
+} 
+
+/* Aside section was the most difficult, struggled with it's compression during the flex wrap */
+aside {
+  max-width: 20%;
+    flex: 4;
+    background-color: #b9c6ae;
+    padding: 80px;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 50px;
+    margin-right: 20px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+    background-color: var(--background);
+    color: #ffffff;
+    margin-top: 15px;
+  }
+
+aside img {
+    display: block;
+    border-radius: 50px;
+    margin: 10px auto;
+    max-width: 150px;
+    text-align: center;
+}
+aside section {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+aside h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+/* Footer specs including image specs */
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+footer img {
+  max-width: 5%;
+  max-height: 5%;
+  border-radius: 50px;
+}
+
+/* Needed to create this class to get the title in the right place for the flex boxes  */
+ .title {
+  position: relative;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 36px;
+  z-index: 2;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+} 
+
+/* Flex box and grid for the work section */
+.work {
+  max-width: 80%;
+  margin: 15px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: 2;
+  grid-gap: 0; 
+  background-color: var(--background);
+  position: relative;
+  align-items: center; 
+  border-radius: 50px;
+  border: 5px solid black;
+}
+
+/* Flex box and grid for the resume section */
+.resume {
+  max-width: 80%;
+  margin: 15px 15px 0px 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: 2;
+  grid-gap: 0; 
+  background-color: var(--background);
+  position: relative;
+  align-items: center; 
+  border-radius: 50px;
+  border: 5px solid black;
+}
+
+.resumeimage {
+  text-align: center;
+  position: relative;
+  flex: 1;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 30px;
+  
+}
+
+.resumeimage img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+/* A Class for images to assist with centering and positioning  */
+.image {
+  text-align: center;
+  position: relative;
+  flex: 1;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+/* Sub class for img within the image class  */
+.image img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+
+/* Specific specs for photos including what row and what column to go in ( Struggled with order of nth review later) */
+.image:nth-child(1) {
+  grid-column: 2; 
+  grid-row: 1; 
+  width: 200%;
+}
+.image:nth-child(3) {
+  grid-column: 1; 
+  grid-row: 2; 
+  width: 100%;
+}
+.image:nth-child(2) {
+  grid-column: 3; 
+  grid-row: 2; 
+  width: 100%;
+}
+
+/* overlays for images in resume and work sections */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(238, 160, 71, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1; 
+}
+
+.overlay h3 {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* Hover specs for overlays */
+.image:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.resumeimage:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Screen adjustments when browsing on smaller devices */
+@media screen and (max-width: 768px) {
+  .work, .resume {
+    grid-template-columns: 1fr; 
+    margin: 0 auto; 
+    max-width: 90%; 
+  }
+  
+  .image, .resumeimage {
+    width: 100%; 
+  }
+}
+@media screen and (max-width: 1206px) {
+  aside {
+    max-width: 100%; 
+    margin-right: 0; 
+    padding: 20px; 
+  }
+}

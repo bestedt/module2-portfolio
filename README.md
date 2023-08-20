@@ -12,3 +12,7 @@ https://www.vecteezy.com/
 https://www.imagine.art/
 ## Purpose Of Project
 To create myself a working and adaptable portfolio that I can continue to mod and change with the various skills I will learn throughout the bootcamp
+## Project Screen Shots
+![Screenshot 2023-08-19 181752](https://github.com/bestedt/module2-portfolio/assets/139821441/48f73923-3362-4067-b4e2-20ccc65ea438)
+![Screenshot 2023-08-19 181815](https://github.com/bestedt/module2-portfolio/assets/139821441/b398a211-0b03-43d5-b7c6-fe74b62e83a0)
+![Screenshot 2023-08-19 181827](https://github.com/bestedt/module2-portfolio/assets/139821441/2b56f2fb-9603-419f-b2cf-6d4840293a97)
